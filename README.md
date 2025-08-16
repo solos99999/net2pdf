@@ -44,6 +44,10 @@ brew install cairo pango gdk-pixbuf libffi
 
 ## 🚀 快速开始
 
+### ⚡ 推荐使用简化版本
+
+为了避免复杂的依赖问题，我们强烈推荐使用**简化版本**，它功能完整且稳定可靠。
+
 ### 1. 克隆项目
 ```bash
 git clone https://github.com/yourusername/web-to-pdf-tool.git
@@ -61,7 +65,7 @@ pip install -r requirements.txt
 
 ### 3. 运行程序
 
-#### 单个网页转换
+#### 🎯 简化版本（推荐）
 ```bash
 python web_to_pdf_simple.py
 ```
@@ -75,6 +79,20 @@ python batch_web_to_pdf.py
 ```bash
 run.bat
 ```
+
+### 📋 版本对比
+
+| 功能 | 简化版本 | 完整版本 |
+|------|----------|----------|
+| 单个网页转换 | ✅ | ✅ |
+| 批量网页转换 | ✅ | ✅ |
+| 中文支持 | ✅ | ✅ |
+| PDF生成 | ✅ | ✅ |
+| 依赖复杂度 | 低 | 高 |
+| 安装难度 | 简单 | 复杂 |
+| 稳定性 | 高 | 中等 |
+
+**💡 建议：首次使用请选择简化版本！**
 
 ## 📖 使用方法
 
@@ -201,17 +219,28 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-#### 2. PDF生成失败
+#### 2. WeasyPrint问题（完整版本）
+如果遇到WeasyPrint导入错误，运行修复脚本：
+```bash
+python fix_weasyprint_issues.py
+```
+
+或者使用简化版本（推荐）：
+```bash
+python web_to_pdf_simple.py
+```
+
+#### 3. PDF生成失败
 - 检查wkhtmltopdf是否正确安装
 - 运行 `python test_pdf_generation.py` 测试
 - 查看错误日志获取详细信息
 
-#### 3. 中文显示问题
+#### 4. 中文显示问题
 - 运行 `python test_chinese.py` 测试中文支持
 - 确保网页编码正确
 - 检查生成的HTML文件编码
 
-#### 4. 批量处理失败
+#### 5. 批量处理失败
 - 检查网络连接
 - 确认链接有效性
 - 查看详细错误信息

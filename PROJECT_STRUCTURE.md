@@ -25,7 +25,9 @@ web-to-pdf-tool/
 │   ├── README.md                 # 中文说明文档
 │   ├── README_EN.md              # 英文说明文档
 │   ├── PROJECT_STRUCTURE.md      # 项目结构说明
-│   └── CHANGELOG.md              # 更新日志
+│   ├── CHANGELOG.md              # 更新日志
+│   ├── QUICK_START.md            # 快速开始指南
+│   └── fix_weasyprint_issues.py  # WeasyPrint问题修复脚本
 │
 ├── 📁 输出目录（自动创建）
 │   ├── outputs/                  # 单个文件输出
