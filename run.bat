@@ -26,7 +26,7 @@ goto menu
 :full_version
 echo.
 echo 启动完整版本...
-python web_to_pdf.py
+python batch_web_to_pdf.py
 goto end
 
 :simple_version
